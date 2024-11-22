@@ -12,6 +12,7 @@
     "deploy:dev": "npm run build && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.82.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "react": "^18.3.1",
