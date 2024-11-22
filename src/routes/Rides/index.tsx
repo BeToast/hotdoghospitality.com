@@ -1,5 +1,4 @@
 import StandardLayout from "../../compos/StandardLayout";
-import "./style.css";
 
 const Rides: React.FC<{}> = ({}) => {
    const videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";

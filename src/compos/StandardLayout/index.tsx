@@ -1,7 +1,5 @@
-// components/StandardLayout.tsx
 import { useState } from "react";
 import "./style.css";
-import { useMediaCache } from "../CachedYouTubeEmbed/mediaCache";
 
 type MediaType = "video" | "photo";
 
@@ -30,66 +28,53 @@ const Content: React.FC<ContentProps> = ({ children }) => {
 
 const Media: React.FC<MediaProps> = ({ videoUrl, photos }) => {
    const [mediaType, setMediaType] = useState<MediaType>("video");
-   const { getCachedMedia, setCachedMedia } = useMediaCache();
 
    const getYouTubeEmbedUrl = (url: string) => {
       const videoId = url.split("v=")[1];
       return `https://www.youtube.com/embed/${videoId}`;
    };
 
-   const embedUrl = getYouTubeEmbedUrl(videoUrl);
-   const cachedIframe = getCachedMedia(embedUrl);
-
-   const handleIframeRef = (node: HTMLIFrameElement | null) => {
-      if (node && !cachedIframe) {
-         setCachedMedia(embedUrl, node);
-      }
-   };
-
    return (
-      <div className="w-1/2">
-         <div className="media-container">
-            <div
-               className={`media-item ${mediaType === "video" ? "active" : ""}`}
-            >
-               {cachedIframe ? (
-                  <div
-                     dangerouslySetInnerHTML={{
-                        __html: cachedIframe.outerHTML,
-                     }}
-                  />
-               ) : (
+      <>
+         <div className="w-1/2">
+            <div className="media-container">
+               <div
+                  className={`media-item ${
+                     mediaType === "video" ? "active" : ""
+                  }`}
+               >
                   <iframe
-                     ref={handleIframeRef}
                      width="560"
                      height="315"
-                     src={embedUrl}
+                     src={getYouTubeEmbedUrl(videoUrl)}
                      title="YouTube video player"
                      frameBorder="0"
                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                      allowFullScreen
                   />
-               )}
+               </div>
+
+               <div
+                  className={`media-item ${
+                     mediaType === "photo" ? "active" : ""
+                  }`}
+               >
+                  {photos.map((photo, index) => (
+                     <img key={index} src={photo} alt={`Photo ${index + 1}`} />
+                  ))}
+               </div>
             </div>
 
-            <div
-               className={`media-item ${mediaType === "photo" ? "active" : ""}`}
+            <button
+               className="toggle-button"
+               onClick={() =>
+                  setMediaType(mediaType === "video" ? "photo" : "video")
+               }
             >
-               {photos.map((photo, index) => (
-                  <img key={index} src={photo} alt={`Photo ${index + 1}`} />
-               ))}
-            </div>
+               Switch to {mediaType === "video" ? "Photos" : "Video"}
+            </button>
          </div>
-
-         <button
-            className="toggle-button"
-            onClick={() =>
-               setMediaType(mediaType === "video" ? "photo" : "video")
-            }
-         >
-            Switch to {mediaType === "video" ? "Photos" : "Video"}
-         </button>
-      </div>
+      </>
    );
 };
 
