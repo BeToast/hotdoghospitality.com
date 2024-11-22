@@ -12,7 +12,6 @@ import { lazy, Suspense } from "react";
 
 // Import About normally since it's the default route
 import About from "./routes/About";
-import { MediaCacheProvider } from "./compos/CachedYouTubeEmbed/mediaCache";
 
 // Lazy load other routes
 const Rides = lazy(() => import("./routes/Rides"));
@@ -25,11 +24,9 @@ const RootComponent = () => {
       <>
          <Nav />
          <Bg>
-            <MediaCacheProvider>
-               <Suspense fallback={<div>Loading...</div>}>
-                  <Outlet />
-               </Suspense>
-            </MediaCacheProvider>
+            <Suspense fallback={<div>Loading...</div>}>
+               <Outlet />
+            </Suspense>
          </Bg>
       </>
    );
