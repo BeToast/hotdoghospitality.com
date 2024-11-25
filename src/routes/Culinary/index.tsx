@@ -1,5 +1,6 @@
 import "./style.css";
 import StandardLayout from "../../compos/StandardLayout";
+import SkiSigns from "../../compos/SkiSign";
 
 const Culinary: React.FC<{}> = ({}) => {
    const videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
@@ -10,7 +11,17 @@ const Culinary: React.FC<{}> = ({}) => {
    return (
       <StandardLayout>
          <StandardLayout.Content>
-            <p>
+            <SkiSigns />
+         </StandardLayout.Content>
+         <StandardLayout.Media videoUrl={videoUrl} photos={photos} />
+      </StandardLayout>
+   );
+};
+
+export default Culinary;
+
+{
+   /* <p>
                Intermediate - "I am just having a little fun" Meats/Cheeses,
                Grapes, Dried Fruits, Jams/Crackers Hummus w/ Cucumber, Blanched
                Carrots, Celery, Bell Peppers, Olives Dip (not soy) Bagels- 24
@@ -30,11 +41,5 @@ const Culinary: React.FC<{}> = ({}) => {
                Chilled Salmon, Medallions, Dijon Shallot Aioli Chilled Sliced
                Filet Mignon, Horseradish Cream, Chimi-chili, Roll Points or
                Butter Lettuce Cups
-            </p>
-         </StandardLayout.Content>
-         <StandardLayout.Media videoUrl={videoUrl} photos={photos} />
-      </StandardLayout>
-   );
-};
-
-export default Culinary;
+            </p> */
+}

@@ -1,0 +1,36 @@
+/* styles/fonts.css */
+@font-face {
+   font-family: "EuropaGroteskSH-Bol";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Bol.otf")
+      format("opentype");
+}
+
+@font-face {
+   font-family: "EuropaGroteskSH-Dem";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-DemBol.otf")
+      format("opentype");
+}
+
+@font-face {
+   font-family: "EuropaGroteskSH-Lig";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Lig.otf")
+      format("opentype");
+}
+
+@font-face {
+   font-family: "EuropaGroteskSH-Med";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Med.otf")
+      format("opentype");
+}
+
+@font-face {
+   font-family: "EuropaGroteskSH-Reg";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Reg.otf")
+      format("opentype");
+}
+
+@font-face {
+   font-family: "EuropaGroteskSH-XLig";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-XLig.otf")
+      format("opentype");
+}

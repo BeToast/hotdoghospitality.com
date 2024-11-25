@@ -23,7 +23,7 @@ interface StandardLayoutComponent extends React.FC<StandardLayoutProps> {
 }
 
 const Content: React.FC<ContentProps> = ({ children }) => {
-   return <div className="w-1/2 text-left">{children}</div>;
+   return <div className="w-1/2">{children}</div>;
 };
 
 const Media: React.FC<MediaProps> = ({ videoUrl, photos }) => {
@@ -48,7 +48,6 @@ const Media: React.FC<MediaProps> = ({ videoUrl, photos }) => {
                      height="315"
                      src={getYouTubeEmbedUrl(videoUrl)}
                      title="YouTube video player"
-                     frameBorder="0"
                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                      allowFullScreen
                   />
