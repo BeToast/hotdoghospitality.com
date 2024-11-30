@@ -1,5 +1,6 @@
 import React from "react";
-import { arrow, diamond, doubleDiamond } from "../../../assets/svgs";
+import { arrow, diamond, doubleDiamond, square } from "../../../assets/svgs";
+import "./style.css";
 
 export type Difficulty = "intermediate" | "expert" | "double-diamond";
 
@@ -20,15 +21,7 @@ const TrailSign: React.FC<TrailSignProps> = ({
 }) => {
    const getDifficultySymbol = (diff: Difficulty) => {
       const symbols = {
-         intermediate: (
-            <svg
-               viewBox="0 0 24 24"
-               fill="none"
-               xmlns="http://www.w3.org/2000/svg"
-            >
-               <rect x="2" y="2" width="20" height="20" fill="currentColor" />
-            </svg>
-         ),
+         intermediate: square,
          expert: diamond,
          "double-diamond": doubleDiamond,
       }[diff];
@@ -38,7 +31,7 @@ const TrailSign: React.FC<TrailSignProps> = ({
 
    return (
       <div
-         className={`w-[500px] shadow-lg ${
+         className={`trail-sign-content w-full shadow-lg ${
             difficulty === "intermediate" ? "bg-blue-900" : "bg-black"
          }`}
       >

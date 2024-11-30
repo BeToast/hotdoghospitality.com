@@ -3,7 +3,7 @@ import StandardLayout from "../../compos/StandardLayout";
 import SkiSigns from "../../compos/SkiSign";
 
 const Culinary: React.FC<{}> = ({}) => {
-   const videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+   const videoUrl = "https://youtu.be/EXVR-_lA8WA";
    const photos = [
       "https://img.rgstatic.com/content/movie/12badddc-f7fb-41e0-998c-db54147d8db1/backdrop-1280.jpg",
    ];

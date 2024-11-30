@@ -2,16 +2,23 @@
 .trail-sign-content ul {
    list-style-type: disc;
    padding-left: 20px;
-   margin: 0;
+   margin-left: 20px;
    padding-top: 16px;
    padding-bottom: 16px;
 }
 
 .trail-sign-content li {
    padding: 3px 0;
+   font-size: 20px;
+   @apply font-europa-light;
 }
 
-.trail-sign-content p {
+.trail-sign-content p.quote {
+   @apply p-2;
+   @apply font-europa-medium-ita;
+   font-size: 28px;
+}
+.trail-sign-content p.price {
    text-align: right;
    margin-top: 15px;
    margin-bottom: 0;

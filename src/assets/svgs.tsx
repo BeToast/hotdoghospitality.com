@@ -1,3 +1,9 @@
+export const square = (
+   <svg viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" fill="currentColor" />
+   </svg>
+);
+
 export const diamond = (
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
       <path

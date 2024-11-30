@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TrailSign, { Difficulty } from "./TrailSign";
+import { square } from "../../assets/svgs";
 
 const SkiSign: React.FC = () => {
    const [openSign, setOpenSign] = useState<Difficulty | undefined>(
@@ -11,14 +12,16 @@ const SkiSign: React.FC = () => {
    };
 
    return (
-      <div className="max-w-md mx-auto space-y-4">
+      <div className="w-[625px] mx-auto space-y-4">
          <TrailSign
             title="Intermediate"
             isOpen={openSign === "intermediate"}
             onToggle={() => handleToggle("intermediate")}
             difficulty="intermediate"
          >
-            <p>I am just having a little fun</p>
+            <p className="quote">
+               &ldquo; I am just having a little fun &rdquo;
+            </p>
             <ul>
                <li>Meats</li>
                <li>Cheeses</li>
@@ -34,21 +37,28 @@ const SkiSign: React.FC = () => {
                <li>Smoked Salmon</li>
                <li>Herbs and Spices</li>
 
-               <p>$45 per person</p>
+               <p className="price">$45 per person</p>
             </ul>
          </TrailSign>
 
          <TrailSign
-            title="Expert"
+            title="Advanced"
             isOpen={openSign === "expert"}
             onToggle={() => handleToggle("expert")}
             difficulty="expert"
          >
-            <p>
-               Start on the right side or the left side but not down the middle!
+            <p className="quote">
+               &ldquo; Ski the right or left side but not down the middle!
+               &rdquo;
             </p>
-            <p>Includes everthing in Intermediate, plus:</p>
             <ul>
+               <li>
+                  Includes everthing in{" "}
+                  <span className="font-europa-medium">
+                     <div className="h-[14px] w-[14px] pt-[2px] bg-blue-900 inline-block" />{" "}
+                     Intermediate
+                  </span>
+               </li>
                <li>Chilled Poached Shrimp</li>
                <li>Lemon Wedges</li>
                <li>Cocktail Sauce</li>
@@ -58,6 +68,7 @@ const SkiSign: React.FC = () => {
                <li>Buttermilk Mayonnaise</li>
                <li>Rolls or Butter Lettuce Cups, Both if requested</li>
             </ul>
+            <p className="price">$45 per person</p>
          </TrailSign>
 
          <TrailSign
@@ -66,9 +77,25 @@ const SkiSign: React.FC = () => {
             onToggle={() => handleToggle("double-diamond")}
             difficulty="double-diamond"
          >
-            <p>What the heck's a cheese board!? </p>
-            <p>Includes everthing in Intermediate and Expert plus:</p>
+            <p className="quote">
+               &ldquo; What the heck's a cheese board!? &rdquo;
+            </p>
             <ul>
+               <li>
+                  Includes everthing in{" "}
+                  <span className="font-europa-medium">
+                     <div className="h-[14px] w-[14px] pt-[2px] bg-blue-900 inline-block" />{" "}
+                     Intermediate
+                  </span>{" "}
+                  and{" "}
+                  <span className="font-europa-medium">
+                     <div className="mx-[2px] mb-[1px] w-3 h-3 inline-block">
+                        <div className="h-[12px] w-[12px] bg-black rotate-45" />
+                     </div>
+                     {"  "}
+                     Advanced
+                  </span>
+               </li>
                <li>Cheeses</li>
                <li>Medallions</li>
                <li>Dijon Shallot Aioli</li>
@@ -77,6 +104,7 @@ const SkiSign: React.FC = () => {
                <li>Chimi-churri</li>
                <li>Rolls or Butter Lettuce Cups</li>
             </ul>
+            <p className="price">$45 per person</p>
          </TrailSign>
       </div>
    );
