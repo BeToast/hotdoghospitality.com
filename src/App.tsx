@@ -1,6 +1,5 @@
 import "./App.css";
 import Nav from "./compos/Nav";
-import Bg from "./compos/Bg";
 import {
    Outlet,
    RouterProvider,
@@ -10,10 +9,12 @@ import {
 } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
 
-// Import About normally since it's the default route
-import About from "./routes/About";
+import BgSky from "./compos/Bg/BgSky";
+import BgMountain from "./compos/Bg/BgMountain";
 
-// Lazy load other routes
+// load routes
+import Home from "./routes/Home";
+const About = lazy(() => import("./routes/About"));
 const Rides = lazy(() => import("./routes/Rides"));
 const Culinary = lazy(() => import("./routes/Culinary"));
 const Wine = lazy(() => import("./routes/Wine"));
@@ -22,12 +23,13 @@ const Contact = lazy(() => import("./routes/Contact"));
 const RootComponent = () => {
    return (
       <>
+         <BgSky />
          <Nav />
-         <Bg>
+         <BgMountain>
             <Suspense fallback={<div>Loading...</div>}>
                <Outlet />
             </Suspense>
-         </Bg>
+         </BgMountain>
       </>
    );
 };
@@ -39,7 +41,12 @@ const rootRoute = createRootRoute({
 const indexRoute = createRoute({
    getParentRoute: () => rootRoute,
    path: "/",
-   component: About,
+   component: Home,
+});
+const homeRoute = createRoute({
+   getParentRoute: () => rootRoute,
+   path: "/home",
+   component: Home,
 });
 
 const aboutRoute = createRoute({
@@ -74,6 +81,7 @@ const contactRoute = createRoute({
 
 const routeTree = rootRoute.addChildren([
    indexRoute,
+   homeRoute,
    aboutRoute,
    ridesRoute,
    culinaryRoute,

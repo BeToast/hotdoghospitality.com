@@ -6,8 +6,20 @@
 }
 
 @font-face {
+   font-family: "EuropaGroteskSH-BolIta";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-BolIta.otf")
+      format("opentype");
+}
+
+@font-face {
    font-family: "EuropaGroteskSH-Dem";
    src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-DemBol.otf")
+      format("opentype");
+}
+
+@font-face {
+   font-family: "EuropaGroteskSH-DemIta";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-DemIta.otf")
       format("opentype");
 }
 
@@ -18,8 +30,20 @@
 }
 
 @font-face {
+   font-family: "EuropaGroteskSH-LigIta";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-LigIta.otf")
+      format("opentype");
+}
+
+@font-face {
    font-family: "EuropaGroteskSH-Med";
    src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Med.otf")
+      format("opentype");
+}
+
+@font-face {
+   font-family: "EuropaGroteskSH-MedIta";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-MedIta.otf")
       format("opentype");
 }
 
@@ -30,7 +54,19 @@
 }
 
 @font-face {
+   font-family: "EuropaGroteskSH-RegIta";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-RegIta.otf")
+      format("opentype");
+}
+
+@font-face {
    font-family: "EuropaGroteskSH-XLig";
    src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-XLig.otf")
+      format("opentype");
+}
+
+@font-face {
+   font-family: "EuropaGroteskSH-XLigIta";
+   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-XLigIta.otf")
       format("opentype");
 }

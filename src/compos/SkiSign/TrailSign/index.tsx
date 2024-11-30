@@ -38,7 +38,7 @@ const TrailSign: React.FC<TrailSignProps> = ({
 
    return (
       <div
-         className={`w-[500px] ${
+         className={`w-[500px] shadow-lg ${
             difficulty === "intermediate" ? "bg-blue-900" : "bg-black"
          }`}
       >
@@ -76,11 +76,11 @@ const TrailSign: React.FC<TrailSignProps> = ({
          <div
             className="transition-all duration-300"
             style={{
-               maxHeight: isOpen ? "12rem" : "0",
+               maxHeight: isOpen ? "" : "0",
                overflow: "hidden",
             }}
          >
-            <div>{children}</div>
+            <div className="bg-white">{children}</div>
          </div>
       </div>
    );

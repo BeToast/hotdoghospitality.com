@@ -18,8 +18,24 @@ const SkiSign: React.FC = () => {
             onToggle={() => handleToggle("intermediate")}
             difficulty="intermediate"
          >
-            Suitable for skiers who can link turns and stop safely on moderate
-            slopes.
+            <p>I am just having a little fun</p>
+            <ul>
+               <li>Meats</li>
+               <li>Cheeses</li>
+               <li>Grapes</li>
+               <li>Dried Fruit</li>
+               <li>Jam</li>
+               <li>Crackers</li>
+               <li>
+                  Hummus w/ Cucumber, Blanched Carrots, Celery, Bell Peppers,
+                  Olives
+               </li>
+               <li>24 hour fermented bagels</li>
+               <li>Smoked Salmon</li>
+               <li>Herbs and Spices</li>
+
+               <p>$45 per person</p>
+            </ul>
          </TrailSign>
 
          <TrailSign
@@ -28,8 +44,20 @@ const SkiSign: React.FC = () => {
             onToggle={() => handleToggle("expert")}
             difficulty="expert"
          >
-            For advanced skiers comfortable with steep terrain and varied snow
-            conditions.
+            <p>
+               Start on the right side or the left side but not down the middle!
+            </p>
+            <p>Includes everthing in Intermediate, plus:</p>
+            <ul>
+               <li>Chilled Poached Shrimp</li>
+               <li>Lemon Wedges</li>
+               <li>Cocktail Sauce</li>
+               <li>Lemon Chive Aioli</li>
+               <li>Parmesan Chicken Salad</li>
+               <li>Green Bean Quinoa</li>
+               <li>Buttermilk Mayonnaise</li>
+               <li>Rolls or Butter Lettuce Cups, Both if requested</li>
+            </ul>
          </TrailSign>
 
          <TrailSign
@@ -38,7 +66,17 @@ const SkiSign: React.FC = () => {
             onToggle={() => handleToggle("double-diamond")}
             difficulty="double-diamond"
          >
-            Extremely challenging terrain for expert skiers only.
+            <p>What the heck's a cheese board!? </p>
+            <p>Includes everthing in Intermediate and Expert plus:</p>
+            <ul>
+               <li>Cheeses</li>
+               <li>Medallions</li>
+               <li>Dijon Shallot Aioli</li>
+               <li>Chilled Sliced Filet Mignon</li>
+               <li>Horseradish Cream</li>
+               <li>Chimi-churri</li>
+               <li>Rolls or Butter Lettuce Cups</li>
+            </ul>
          </TrailSign>
       </div>
    );

@@ -1,24 +1,23 @@
-import { Link, useRouter } from "@tanstack/react-router";
-import { useState, useEffect } from "react";
+import { useRouter } from "@tanstack/react-router";
+import NavItem, { NavItemInter } from "./NavItem";
+import { useEffect, useState } from "react";
 
-const Nav = () => {
+const Nav: React.FC = () => {
    const router = useRouter();
-   const [currentPath, setCurrentPath] = useState(
+   const [currentPath, setCurrentPath] = useState<string>(
       router.state.location.pathname.toLowerCase()
    );
 
-   // Subscribe to route changes using the correct event type
    useEffect(() => {
-      // Update currentPath when location changes
       const unsubscribe = router.subscribe("onResolved", () => {
          setCurrentPath(router.state.location.pathname.toLowerCase());
       });
 
-      // Cleanup subscription on unmount
       return () => unsubscribe();
    }, [router]);
 
-   const navItems = [
+   const navItems: NavItemInter[] = [
+      { path: "/home", label: "Home" },
       { path: "/about", label: "About" },
       { path: "/rides", label: "Rides" },
       { path: "/culinary", label: "Culinary" },
@@ -27,22 +26,15 @@ const Nav = () => {
    ];
 
    return (
-      <nav className="fixed top-0 left-0 w-full z-50 px-4 py-3">
+      <nav className="fixed top-0 left-0 w-full px-4 py-3 h-[102px]z-20">
          <div className="flex justify-center gap-8">
             {navItems.map((item) => (
-               <Link
+               <NavItem
                   key={item.path}
-                  to={item.path}
-                  className={`
-              px-4 py-2 
-              text-lg font-medium 
-              transition-colors duration-200
-              hover:text-gray-100
-              ${currentPath === item.path ? "text-gray-300" : "text-gray-700"}
-            `}
-               >
-                  {item.label}
-               </Link>
+                  path={item.path}
+                  label={item.label}
+                  currentPath={currentPath}
+               />
             ))}
          </div>
       </nav>
