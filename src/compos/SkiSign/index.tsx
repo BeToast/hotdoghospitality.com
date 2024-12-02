@@ -1,6 +1,5 @@
 import { useState } from "react";
 import TrailSign, { Difficulty } from "./TrailSign";
-import { square } from "../../assets/svgs";
 
 const SkiSign: React.FC = () => {
    const [openSign, setOpenSign] = useState<Difficulty | undefined>(
@@ -8,7 +7,8 @@ const SkiSign: React.FC = () => {
    );
 
    const handleToggle = (signId: Difficulty) => {
-      setOpenSign(openSign === signId ? undefined : signId);
+      // setOpenSign(openSign === signId ? undefined : signId);
+      setOpenSign(signId);
    };
 
    return (
