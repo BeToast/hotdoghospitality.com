@@ -1,72 +1,68 @@
 /* styles/fonts.css */
 @font-face {
    font-family: "EuropaGroteskSH-Bol";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Bol.otf")
-      format("opentype");
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-Bol.otf") format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-BolIta";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-BolIta.otf")
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-BolIta.otf")
       format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-Dem";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-DemBol.otf")
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-DemBol.otf")
       format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-DemIta";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-DemIta.otf")
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-DemIta.otf")
       format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-Lig";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Lig.otf")
-      format("opentype");
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-Lig.otf") format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-LigIta";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-LigIta.otf")
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-LigIta.otf")
       format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-Med";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Med.otf")
-      format("opentype");
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-Med.otf") format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-MedIta";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-MedIta.otf")
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-MedIta.otf")
       format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-Reg";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-Reg.otf")
-      format("opentype");
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-Reg.otf") format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-RegIta";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-RegIta.otf")
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-RegIta.otf")
       format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-XLig";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-XLig.otf")
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-XLig.otf")
       format("opentype");
 }
 
 @font-face {
    font-family: "EuropaGroteskSH-XLigIta";
-   src: url("/public/fonts/europaGroteskSH/EuropaGroteskSH-XLigIta.otf")
+   src: url("/fonts/europaGroteskSH/EuropaGroteskSH-XLigIta.otf")
       format("opentype");
 }
