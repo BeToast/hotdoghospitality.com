@@ -17,7 +17,7 @@ import Home from "./routes/Home";
 const About = lazy(() => import("./routes/About"));
 const Rides = lazy(() => import("./routes/Rides"));
 const Culinary = lazy(() => import("./routes/Culinary"));
-const Wine = lazy(() => import("./routes/Wine"));
+const Sommelier = lazy(() => import("./routes/Sommelier"));
 const Contact = lazy(() => import("./routes/Contact"));
 
 const RootComponent = () => {
@@ -69,8 +69,8 @@ const culinaryRoute = createRoute({
 
 const wineRoute = createRoute({
    getParentRoute: () => rootRoute,
-   path: "/wine",
-   component: Wine,
+   path: "/sommelier",
+   component: Sommelier,
 });
 
 const contactRoute = createRoute({

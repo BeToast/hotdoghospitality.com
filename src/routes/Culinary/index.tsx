@@ -5,7 +5,9 @@ import SkiSigns from "../../compos/SkiSign";
 const Culinary: React.FC<{}> = ({}) => {
    const videoUrl = "https://www.youtube.com/watch?v=EXVR-_lA8WA";
    const photos = [
-      "https://img.rgstatic.com/content/movie/12badddc-f7fb-41e0-998c-db54147d8db1/backdrop-1280.jpg",
+      "/intermediateCulinary.webp",
+      "/advancedCulinary.webp",
+      "/doubleDiamondCulinary.webp",
    ];
 
    return (

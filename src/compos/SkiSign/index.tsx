@@ -7,7 +7,6 @@ const SkiSign: React.FC = () => {
    );
 
    const handleToggle = (signId: Difficulty) => {
-      // setOpenSign(openSign === signId ? undefined : signId);
       setOpenSign(signId);
    };
 
@@ -23,19 +22,19 @@ const SkiSign: React.FC = () => {
                &ldquo; I am just having a little fun &rdquo;
             </p>
             <ul>
-               <li>Meats</li>
-               <li>Cheeses</li>
+               <li>4 Artisanal Cheeses</li>
                <li>Grapes</li>
                <li>Dried Fruit</li>
-               <li>Jam</li>
                <li>Crackers</li>
                <li>
-                  Hummus w/ Cucumber, Blanched Carrots, Celery, Bell Peppers,
-                  Olives
+                  Hummus{" "}
+                  <span className="">
+                     w/ Cucumber, Blanched Carrots, Celery, Bell Peppers, Olives
+                  </span>
                </li>
                <li>24 hour fermented bagels</li>
-               <li>Smoked Salmon</li>
-               <li>Herbs and Spices</li>
+               <li>Smoked Salmon Spread</li>
+               <li>Herb Spread</li>
 
                <p className="price">$45 per person</p>
             </ul>
@@ -63,7 +62,7 @@ const SkiSign: React.FC = () => {
                <li>Lemon Wedges</li>
                <li>Cocktail Sauce</li>
                <li>Lemon Chive Aioli</li>
-               <li>Parmesan Chicken Salad</li>
+               <li>Terragon Chicken Salad</li>
                <li>Green Bean Quinoa</li>
                <li>Buttermilk Mayonnaise</li>
                <li>Rolls or Butter Lettuce Cups, Both if requested</li>
@@ -78,7 +77,7 @@ const SkiSign: React.FC = () => {
             difficulty="double-diamond"
          >
             <p className="quote">
-               &ldquo; What the heck's a cheese board!? &rdquo;
+               &ldquo; What the heck's is a Chinese Downhill!? &rdquo;
             </p>
             <ul>
                <li>

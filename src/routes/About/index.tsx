@@ -1,7 +1,16 @@
-import "./style.css";
+import { categories } from "../Home";
+import ImageCard from "./ImageCard";
 
-const About: React.FC<{}> = ({}) => {
-   return <>about</>;
+interface Category {
+   id: string;
+   label: string;
+   src: string;
+}
+
+const About = () => {
+   return (
+      
+   );
 };
 
 export default About;

@@ -1,7 +1,7 @@
 import StandardLayout from "../../compos/StandardLayout";
 import "./style.css";
 
-const Wine: React.FC<{}> = ({}) => {
+const Sommelier: React.FC<{}> = ({}) => {
    const videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
    const photos = [
       "https://img.rgstatic.com/content/movie/12badddc-f7fb-41e0-998c-db54147d8db1/backdrop-1280.jpg",
@@ -25,4 +25,4 @@ const Wine: React.FC<{}> = ({}) => {
    );
 };
 
-export default Wine;
+export default Sommelier;

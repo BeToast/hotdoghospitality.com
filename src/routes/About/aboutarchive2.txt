@@ -1,0 +1,32 @@
+import { categories } from "../Home";
+import ImageCard from "./ImageCard";
+
+interface Category {
+   id: string;
+   label: string;
+   src: string;
+}
+
+const About = () => {
+   return (
+      <div className="relative flex flex-col items-center justify-start h-full w-full px-8 pb-16">
+         <div className="relative flex flex-col items-start w-full h-full gap-16">
+            <div className="relative h-4/5 w-4/5 shadow-lg bg-slate-300 rounded-lg"></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+               {categories.map((category: Category) => (
+                  <ImageCard key={category.id} {...category} />
+               ))}
+            </div>
+            <div className="absolute right-0 h-full w-[calc((100vh-264px)*(979/1500))] -z-10">
+               <img
+                  src="/chefie.webp"
+                  alt="Chef"
+                  className="w-full h-full object-cover rounded-lg"
+               />
+            </div>
+         </div>
+      </div>
+   );
+};
+
+export default About;
