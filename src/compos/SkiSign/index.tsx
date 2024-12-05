@@ -61,9 +61,7 @@ const SkiSign: React.FC = () => {
                <li>Chilled Poached Shrimp</li>
                <li>Lemon Wedges</li>
                <li>Cocktail Sauce</li>
-               <li>Lemon Chive Aioli</li>
                <li>Terragon Chicken Salad</li>
-               <li>Green Bean Quinoa</li>
                <li>Buttermilk Mayonnaise</li>
                <li>Rolls or Butter Lettuce Cups, Both if requested</li>
             </ul>
@@ -96,7 +94,7 @@ const SkiSign: React.FC = () => {
                   </span>
                </li>
                <li>Chilled Salmon Medallions</li>
-               <li>Dijon Shallot Aioli</li>
+               <li>Lemon Chive Aioli</li>
                <li>Chilled Sliced Filet Mignon</li>
                <li>Horseradish Cream</li>
                <li>Chimi-churri</li>
