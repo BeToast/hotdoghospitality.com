@@ -5,7 +5,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      width="0.853333in" height="0.853333in"
      viewBox="0 0 256 256">
-  <path id="Selection"
+  <path 
         fill="#f21c1a" stroke="none"
         d="M 67.00,100.00
            C 71.81,99.36 86.48,98.49 89.49,95.49

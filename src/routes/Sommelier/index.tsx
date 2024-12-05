@@ -1,23 +1,29 @@
 import StandardLayout from "../../compos/StandardLayout";
-import "./style.css";
 
 const Sommelier: React.FC<{}> = ({}) => {
    const videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-   const photos = [
-      "https://img.rgstatic.com/content/movie/12badddc-f7fb-41e0-998c-db54147d8db1/backdrop-1280.jpg",
-   ];
+   const photos = ["/homeSommelier.webp"];
 
    return (
       <>
          <StandardLayout>
             <StandardLayout.Content>
-               <p>
-                  Wine Experience & Cheese I Love Wine & passed by Level I
-                  Master Sommelier Test at the Masters in Laguna Niguel.
-                  Occasions Now: Ski, Couples, Girls World etc. Enjoy a curated
-                  tasting in your house. We will taste 4 wines & have some
-                  cheeses aged fruit.
-               </p>
+               <div className="w-[600px] font-europa-reg text-lg">
+                  <p className="font-europa-demi text-5xl">
+                     Wine Experience & Cheese
+                  </p>
+                  <p className="mb-4 font-europa-light-ita">
+                     A tasting of 4 bottles of wine with cheeze and charcuterie.
+                  </p>
+                  <p>
+                     Guided by a certified Level I Master Sommelier from the
+                     Court of Masters in Laguna Niguel.
+                  </p>
+                  <p>
+                     Occasions Now: Ski, Couples, Girls Weekend etc. Enjoy a
+                     curated tasting in your accomidation.
+                  </p>
+               </div>
             </StandardLayout.Content>
             <StandardLayout.Media videoUrl={videoUrl} photos={photos} />
          </StandardLayout>

@@ -19,7 +19,7 @@ const SkiSign: React.FC = () => {
             difficulty="intermediate"
          >
             <p className="quote">
-               &ldquo; I am just having a little fun &rdquo;
+               &ldquo; There's more to do in snow than ski. &rdquo;
             </p>
             <ul>
                <li>4 Artisanal Cheeses</li>
@@ -67,7 +67,7 @@ const SkiSign: React.FC = () => {
                <li>Buttermilk Mayonnaise</li>
                <li>Rolls or Butter Lettuce Cups, Both if requested</li>
             </ul>
-            <p className="price">$45 per person</p>
+            <p className="price">$85 per person</p>
          </TrailSign>
 
          <TrailSign
@@ -77,7 +77,7 @@ const SkiSign: React.FC = () => {
             difficulty="double-diamond"
          >
             <p className="quote">
-               &ldquo; What the heck's is a Chinese Downhill!? &rdquo;
+               &ldquo; What the f*ck's is a Chinese Downhill!? &rdquo;
             </p>
             <ul>
                <li>
@@ -95,15 +95,14 @@ const SkiSign: React.FC = () => {
                      Advanced
                   </span>
                </li>
-               <li>Cheeses</li>
-               <li>Medallions</li>
+               <li>Chilled Salmon Medallions</li>
                <li>Dijon Shallot Aioli</li>
                <li>Chilled Sliced Filet Mignon</li>
                <li>Horseradish Cream</li>
                <li>Chimi-churri</li>
                <li>Rolls or Butter Lettuce Cups</li>
             </ul>
-            <p className="price">$45 per person</p>
+            <p className="price">$125 per person</p>
          </TrailSign>
       </div>
    );

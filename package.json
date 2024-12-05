@@ -12,11 +12,13 @@
     "deploy:dev": "npm run build && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@radix-ui/react-slider": "^1.2.1",
     "@tanstack/react-router": "^1.82.2",
     "autoprefixer": "^10.4.20",
     "lucide-react": "^0.464.0",
     "postcss": "^8.4.49",
     "react": "^18.3.1",
+    "react-day-picker": "^9.4.1",
     "react-dom": "^18.3.1",
     "tailwindcss": "^3.4.15"
   },

@@ -1,28 +1,51 @@
 import StandardLayout from "../../compos/StandardLayout";
+import { airports } from "../../staticValues";
 
-const Rides: React.FC<{}> = ({}) => {
-   const videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-   const photos = [
-      "https://img.rgstatic.com/content/movie/12badddc-f7fb-41e0-998c-db54147d8db1/backdrop-1280.jpg",
-   ];
+const VALLEY_RATE = 80;
+
+const Rides: React.FC<{}> = () => {
+   const photos = ["/homeRides.webp"];
+
    return (
-      <>
-         <StandardLayout>
-            <StandardLayout.Content>
-               <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-               </p>
-            </StandardLayout.Content>
-            <StandardLayout.Media videoUrl={videoUrl} photos={photos} />
-         </StandardLayout>
-      </>
+      <StandardLayout>
+         <StandardLayout.Content>
+            <div className="space-y-12 p-8">
+               <div>
+                  <h2 className="font-europa-medium text-5xl mb-4">
+                     Roaring Fork Valley
+                  </h2>
+                  <p className="text-3xl font-europa-reg">
+                     ${VALLEY_RATE} per ride
+                  </p>
+               </div>
+
+               <div>
+                  <h2 className="font-europa-medium text-5xl">
+                     Airport Services
+                  </h2>
+                  <p className="font-europa-reg text-2xl">
+                     all prices are one-way
+                  </p>
+                  <div className="space-y-4">
+                     {airports.map((airport) => (
+                        <div
+                           key={airport.code}
+                           className="flex justify-between items-center py-4 px-6 bg-gray-50"
+                        >
+                           <span className="text-2xl font-europa-reg">
+                              {airport.name} ({airport.code})
+                           </span>
+                           <span className="text-2xl font-europa-medium">
+                              ${airport.fee}
+                           </span>
+                        </div>
+                     ))}
+                  </div>
+               </div>
+            </div>
+         </StandardLayout.Content>
+         <StandardLayout.Media photos={photos} />
+      </StandardLayout>
    );
 };
 

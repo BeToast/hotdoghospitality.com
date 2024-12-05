@@ -20,7 +20,7 @@ const ImageCard = ({ id, label, src }: ImageCardProps) => (
       <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:bg-black/20" />
       <div className="absolute inset-0 flex items-center justify-center">
          <span className="text-white text-xl font-medium px-6 py-3 rounded-full border-2 border-white backdrop-blur-sm">
-            View {label} →
+            {label} →
          </span>
       </div>
    </Link>

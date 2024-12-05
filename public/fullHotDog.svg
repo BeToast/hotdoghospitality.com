@@ -5,8 +5,8 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      width="3.00667in" height="0.586667in"
      viewBox="0 0 902 176">
-  <path id="Selection"
-        fill="none" stroke="black" stroke-width="1"
+  <path 
+        fill="#f21c1a" stroke="none"
         d="M 902.00,46.00
            C 902.00,48.69 902.44,55.44 900.98,57.49
              899.51,59.55 896.30,59.85 894.00,60.25

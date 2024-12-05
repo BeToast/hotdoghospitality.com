@@ -1,4 +1,3 @@
-import "./style.css";
 import StandardLayout from "../../compos/StandardLayout";
 import SkiSigns from "../../compos/SkiSign";
 

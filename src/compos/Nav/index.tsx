@@ -26,7 +26,7 @@ const Nav: React.FC = () => {
 
          // Only update if enough time has passed (throttle) and there's significant scroll change
          if (
-            now - lastScrollTime > 100 &&
+            now - lastScrollTime > 25 &&
             Math.abs(currentScrollY - lastScrollY) > 10
          ) {
             requestAnimationFrame(() => {

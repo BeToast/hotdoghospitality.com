@@ -44,7 +44,9 @@ const TrailSign: React.FC<TrailSignProps> = ({
          <div
             onClick={onToggle}
             className={`w-full flex text-white items-center cursor-pointer
-                 ${difficulty === "intermediate" ? "bg-blue-900" : "bg-black"}`}
+                  ${
+                     difficulty === "intermediate" ? "bg-blue-900" : "bg-black"
+                  }`}
          >
             <div className="w-16 h-16 bg-white flex justify-center content-center">
                <span
