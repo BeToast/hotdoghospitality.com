@@ -5,9 +5,9 @@ import "./style.css";
 import { hotDogHospitality } from "../../assets/svgs";
 
 export const categories = [
+   { id: "food", label: "Food", src: "/homeCulinary.webp" },
+   { id: "wine", label: "Wine", src: "/homeSommelier.webp" },
    { id: "rides", label: "Rides", src: "/homeRides.webp" },
-   { id: "culinary", label: "Culinary", src: "/homeCulinary.webp" },
-   { id: "sommelier", label: "Sommelier", src: "/homeSommelier.webp" },
 ];
 
 const Home = () => {

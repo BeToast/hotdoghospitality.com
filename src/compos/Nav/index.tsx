@@ -44,9 +44,9 @@ const Nav: React.FC = () => {
    const navItems: NavItemInter[] = [
       { path: "/home", label: "Home" },
       { path: "/about", label: "About" },
+      { path: "/food", label: "Food" },
+      { path: "/wine", label: "Wine" },
       { path: "/rides", label: "Rides" },
-      { path: "/culinary", label: "Culinary" },
-      { path: "/sommelier", label: "Sommelier" },
       { path: "/contact", label: "Contact" },
    ];
 

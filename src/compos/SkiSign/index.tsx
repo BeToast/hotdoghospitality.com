@@ -58,6 +58,7 @@ const SkiSign: React.FC = () => {
                      Intermediate
                   </span>
                </li>
+               <div className="font-europa-demi-ita text-lg">Plus:</div>
                <li>Chilled Poached Shrimp</li>
                <li>Lemon Wedges</li>
                <li>Cocktail Sauce</li>

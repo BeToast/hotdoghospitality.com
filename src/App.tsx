@@ -61,15 +61,15 @@ const ridesRoute = createRoute({
    component: Rides,
 });
 
-const culinaryRoute = createRoute({
+const foodRoute = createRoute({
    getParentRoute: () => rootRoute,
-   path: "/culinary",
+   path: "/food",
    component: Culinary,
 });
 
 const wineRoute = createRoute({
    getParentRoute: () => rootRoute,
-   path: "/sommelier",
+   path: "/wine",
    component: Sommelier,
 });
 
@@ -84,7 +84,7 @@ const routeTree = rootRoute.addChildren([
    homeRoute,
    aboutRoute,
    ridesRoute,
-   culinaryRoute,
+   foodRoute,
    wineRoute,
    contactRoute,
 ]);
